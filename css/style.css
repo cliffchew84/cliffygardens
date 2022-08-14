@@ -548,15 +548,15 @@ label {
 .form-control:-ms-input-placeholder {
   color: #777;
 }
-#signup .contact-item {
+#signup .signup-item {
   margin: 20px 0;
 }
-#signup .contact-item span {
+#signup .signup-item span {
   color: rgba(255, 255, 255, 1);
   margin-bottom: 10px;
   display: block;
 }
-#signup .contact-item i.fa {
+#signup .signup-item i.fa {
   margin-right: 10px;
 }
 #signup .social {
