@@ -40,6 +40,38 @@
         gtag('config', 'G-HP3T4SX7XF');
     </script>
 
+    <style>
+        .sliding-panel {
+            position: relative;
+            width: 1010px;
+            overflow: hidden;
+            height: 620px;
+            /* Adjust as needed */
+            border: 1px solid #ddd;
+        }
+
+        .panel-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            transition: left 0.5s ease;
+        }
+
+        input[type="checkbox"]:checked~.sliding-panel .panel-content#panel1 {
+            left: -100%;
+        }
+
+        input[type="checkbox"]:checked~.sliding-panel .panel-content#panel2 {
+            left: 0;
+        }
+
+        .panel-content#panel1 {
+            left: 0;
+        }
+    </style>
+
     <!-- =======================================================
   * Template Name: OnePage
   * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
@@ -74,10 +106,10 @@
             <div class="container">
 
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>My SG Library App</h2>
+                    <h2>SG Public Housing Dashboard</h2>
                     <ol>
                         <li><a href="index.html">Home</a></li>
-                        <li>My SG Library App</li>
+                        <li>SG Public Housing Dashboard</li>
                     </ol>
                 </div>
 
@@ -109,6 +141,7 @@
                             <ul>
                                 <li><strong>Category</strong>: Dashboard</li>
                                 <li><strong>Project date</strong>: Ongoing</li>
+                                <li><strong>Last Updated</strong>: 2024/07/08</li>
                                 <li><strong>Data From</strong>: <a target='_unblank'
                                         href="https://beta.data.gov.sg/collections/189/view">data.gov.sg</a>
                                 </li>
@@ -116,10 +149,13 @@
                         </div>
                         <div class="portfolio-description">
                             <h2>SG Public Housing Dashboard</h2>
-                            <p>Singapore's public housing policies is world
-                                renown. This dashboard that I build uses data from
-                                data.gov.sg, and is my way of monitoring the
-                                Singapore public housing market trends.
+                            <p style="text-align: justify;">
+                                Singapore's public housing policies are internationally acclaimed, with many attributing
+                                our economic miracle to our public housing policies. However, there is
+                                recent discussions on the affordability of our public homes amongst
+                                Singaporeans. Since the public home resale data set is publicly available, I decided to
+                                try to let the data speak for itself, by creating a dashboard to monitor our public
+                                housing market in my own way.
                             </p>
                         </div>
                     </div>
@@ -134,41 +170,107 @@
     <div>
         <div style="display: flex;">
             <div style="flex: 1;">
-                <object width="1050" height="700" type="text/html" data="/assets/charts/boxplot.html"></object>
+                <div class="container mt-5">
+                    <input type="checkbox" id="toggleCheckbox1" class="d-none">
+                    <label for="toggleCheckbox1" class="btn btn-primary">Mths / Qtrs</label>
+                    <div class="sliding-panel">
+                        <div class="panel-content" id="panel1">
+                            <object width="1050" height="650" type="text/html"
+                                data="/assets/charts/mth_boxplot.html"></object>
+                        </div>
+                        <div class="panel-content" id="panel2">
+                            <object width="1050" height="650" type="text/html"
+                                data="/assets/charts/qtr_boxplot.html"></object>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding-left: 10px;">
-                <p>Testing whether this works...</p>
+            <div
+                style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
+                <p>Rather than focus on single metrics like median or mean prices, I wanted to plot out the quarterly
+                    public resale price distributions. We can see that the distribution of public home sales have
+                    widened quite a bit in the past few years. This shows that not only are we having public homes that
+                    are selling for record, beyond million dollar prices, we still have some really affordable public
+                    homes in our resale market.</p>
             </div>
         </div>
 
         <div style="display: flex;">
             <div style="flex: 1;">
-                <object width="1050" height="700" type="text/html" data="/assets/charts/line_chart.html"></object>
+                <div class="container mt-5">
+                    <input type="checkbox" id="toggleCheckbox2" class="d-none">
+                    <label for="toggleCheckbox2" class="btn btn-primary">Mths / Qtrs</label>
+                    <div class="sliding-panel">
+                        <div class="panel-content" id="panel1">
+                            <object width="1050" height="650" type="text/html"
+                                data="/assets/charts/mth_barline_chart.html"></object>
+                        </div>
+                        <div class="panel-content" id="panel2">
+                            <object width="1050" height="650" type="text/html"
+                                data="/assets/charts/qtr_barline_chart.html"></object>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding-left: 10px;">
-                <p>Testing whether this works...</p>
+            <div
+                style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
+                <p>On the other hand, we cannot deny the growing number of million dollar public homes sold in Singapore
+                    in recent years. Focusing on this metric definitely feels like our Singapore public housing market
+                    is becoming less and less affordable. It also doesn’t help that more and more percent of overall
+                    public home sales in Singapore are made up of homes that cost a million dollars or more. </p>
             </div>
         </div>
 
         <div style="display: flex;">
             <div style="flex: 1;">
-                <object width="1050" height="700" type="text/html" data="/assets/charts/stack_bar_values.html"></object>
+                <div class="container mt-5">
+                    <input type="checkbox" id="toggleCheckbox3" class="d-none">
+                    <label for="toggleCheckbox3" class="btn btn-primary">Mths / Qtrs</label>
+                    <div class="sliding-panel">
+                        <div class="panel-content" id="panel1">
+                            <object width="1050" height="650" type="text/html"
+                                data="/assets/charts/mth_stack_bar_values.html"></object>
+                        </div>
+                        <div class="panel-content" id="panel2">
+                            <object width="1050" height="650" type="text/html"
+                                data="/assets/charts/qtr_stack_bar_values.html"></object>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding-left: 10px;">
-                <p>Testing whether this works...</p>
+            <div
+                style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
+                <p>This stacked bar chart shows the number of public home sales, grouped by certain price categories
+                    that was determined by me. </p>
             </div>
         </div>
 
         <div style="display: flex;">
             <div style="flex: 1;">
-                <object width="1050" height="700" type="text/html"
-                    data="/assets/charts/stack_bar_percent.html"></object>
+                <div class="container mt-5">
+                    <input type="checkbox" id="toggleCheckbox4" class="d-none">
+                    <label for="toggleCheckbox4" class="btn btn-primary">Mths / Qtrs</label>
+                    <div class="sliding-panel">
+                        <div class="panel-content" id="panel1">
+                            <object width="1050" height="650" type="text/html"
+                                data="/assets/charts/mth_stack_bar_percent.html"></object>
+                        </div>
+                        <div class="panel-content" id="panel2">
+                            <object width="1050" height="650" type="text/html"
+                                data="/assets/charts/qtr_stack_bar_percent.html"></object>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div style="flex: 1; display: flex; align-items: center; padding-left: 10px;">
-                <p>Testing whether this works...</p>
+            <div
+                style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
+                <p>This chart is similar to the one above, but by converting the absolute transactions into a percentage
+                    of total sales per quarter, one gets to see the changes in proportions of public homes sold by their
+                    price categories. In particular, we can see that million dollar homes are increasingly forming a
+                    larger proportion of public homes sold in the resale market. That said, fortunately, this percentage
+                    is still quite a small percentage. </p>
             </div>
         </div>
-
     </div>
 
 
