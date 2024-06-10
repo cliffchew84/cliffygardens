@@ -140,7 +140,6 @@
                             <ul>
                                 <li><strong>Category</strong>: Dashboard</li>
                                 <li><strong>Project date</strong>: Ongoing</li>
-                                <li><strong>Last Updated</strong>: 10 July 2024</li>
                                 <li><strong>Data From</strong>: <a target='_unblank'
                                         href="https://beta.data.gov.sg/collections/189/view">data.gov.sg</a>
                                 </li>
@@ -151,17 +150,14 @@
                             <p style="text-align: justify;">
                                 Singapore's public housing policies are internationally acclaimed, with many attributing
                                 our economic miracle to our public housing policies. However, there is
-                                recent discussions on the affordability of our public homes amongst
-                                Singaporeans. Since the public home resale data set is publicly available, I decided to
-                                try to let the data speak for itself, by creating a dashboard to monitor our public
-                                housing market in my own way. This page is best
-                                view on desktop.
+                                recent discussions on the affordability of our public homes. Since the public home
+                                resale data set available to public, I wanted to let data speak for itself by creating a
+                                dashboard to monitor our public housing market in my own way. <b>Best viewed on
+                                    desktop.</b>
                             </p>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section><!-- End Portfolio Details Section -->
     </main><!-- End #main -->
@@ -175,21 +171,23 @@
                     <label for="toggleCheckbox1" class="btn btn-primary">Mths / Qtrs</label>
                     <div class="sliding-panel">
                         <div class="panel-content" id="panel1">
-                            <object width="1050" height="650" type="text/html" data="mth_barline_chart.html"></object>
+                            <object width="1050" height="650" type="text/html"
+                                data="assets/charts/mth_boxplot.html"></object>
                         </div>
                         <div class="panel-content" id="panel2">
-                            <object width="1050" height="650" type="text/html" data="qtr_barline_chart.html"></object>
+                            <object width="1050" height="650" type="text/html"
+                                data="assets/charts/qtr_boxplot.html"></object>
                         </div>
                     </div>
                 </div>
             </div>
             <div
                 style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
-                <p>Rather than focus on single metrics like median or mean prices, I wanted to plot out the quarterly
-                    public resale price distributions. We can see that the distribution of public home sales have
-                    widened quite a bit in the past few years. This shows that not only are we having public homes that
-                    are selling for record, beyond million dollar prices, we still have some really affordable public
-                    homes in our resale market.</p>
+                <p> Instead of focusing on a single metric like median or mean prices, <b>I wanted to see the
+                        distribution of our public resale prices across months and quarters.</b>
+                    Boxplot charts does this well because it shows the median prices, 25th and 75th percentile, and also
+                    any outliers within the period category. Our boxplots show that the separation between the expensive
+                    and cheap public homes have increased in the past few years.</p>
             </div>
         </div>
 
@@ -200,20 +198,24 @@
                     <label for="toggleCheckbox2" class="btn btn-primary">Mths / Qtrs</label>
                     <div class="sliding-panel">
                         <div class="panel-content" id="panel1">
-                            <object width="1050" height="650" type="text/html" data="mth_barline_chart.html"></object>
+                            <object width="1050" height="650" type="text/html"
+                                data="assets/charts/mth_barline_chart.html"></object>
                         </div>
                         <div class="panel-content" id="panel2">
-                            <object width="1050" height="650" type="text/html" data="qtr_barline_chart.html"></object>
+                            <object width="1050" height="650" type="text/html"
+                                data="assets/charts/qtr_barline_chart.html"></object>
                         </div>
                     </div>
                 </div>
             </div>
             <div
                 style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
-                <p>On the other hand, we cannot deny the growing number of million dollar public homes sold in Singapore
-                    in recent years. Focusing on this metric definitely feels like our Singapore public housing market
-                    is becoming less and less affordable. It also doesn’t help that more and more percent of overall
-                    public home sales in Singapore are made up of homes that cost a million dollars or more. </p>
+                <p>I also overlapped a bar and line chart that tracks the total number of million public dollar homes,
+                    and the percentage of million dollar public homes over the total number of public homes sold. <b>Not
+                        only we see a rising number of million dollar public homes sold Singapore, there is also a
+                        growing trend of these million dollar homes forming a larger percentage of overall public homes
+                        sold in Singapore.</b> However, this said, the percentage of million dollar homes is still a
+                    relatively small number. </p>
             </div>
         </div>
 
@@ -229,15 +231,17 @@
                         </div>
                         <div class="panel-content" id="panel2">
                             <object width="1050" height="650" type="text/html"
-                                data="qtr_stack_bar_values.html"></object>
+                                data="assets/charts/qtr_stack_bar_values.html"></object>
                         </div>
                     </div>
                 </div>
             </div>
             <div
                 style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
-                <p>This stacked bar chart shows the number of public home sales, grouped by certain price categories
-                    that was determined by me. </p>
+                <p>This stacked bar chart shows the number of public home sales, grouped by price categories determined
+                    by me. We see a <b>growing number of public home sales in the range of SGD 500-800k, SGD 800K-1M and
+                        SGD >1M.</b> In recent years, there are a shrinking number of public homes sold in the range of
+                    SGD 300-500K, and barely any public homes sold that are <300K.< /p>
             </div>
         </div>
 
@@ -249,22 +253,21 @@
                     <div class="sliding-panel">
                         <div class="panel-content" id="panel1">
                             <object width="1050" height="650" type="text/html"
-                                data="mth_stack_bar_percent.html"></object>
+                                data="assets/charts/mth_stack_bar_percent.html"></object>
                         </div>
                         <div class="panel-content" id="panel2">
                             <object width="1050" height="650" type="text/html"
-                                data="qtr_stack_bar_percent.html"></object>
+                                data="assets/charts/qtr_stack_bar_percent.html"></object>
                         </div>
                     </div>
                 </div>
             </div>
             <div
                 style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
-                <p>This chart is similar to the one above, but by converting the absolute transactions into a percentage
-                    of total sales per quarter, one gets to see the changes in proportions of public homes sold by their
-                    price categories. In particular, we can see that million dollar homes are increasingly forming a
-                    larger proportion of public homes sold in the resale market. That said, fortunately, this percentage
-                    is still quite a small percentage. </p>
+                <p>This chart is similar to the one above, but looking at percentages instead to make changes in
+                    proportions across different price categories more obvious. <b>We can see that expensive public home
+                        sales are forming a larger proportion of sales in the resale market</b>. The percentage of >1M
+                    public homes is still quite small, but the growing trend does seem a bit worrying.</p>
             </div>
         </div>
     </div>
