@@ -106,10 +106,10 @@
             <div class="container">
 
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>SG Public Housing Dashboard</h2>
+                    <h2>SG Public Housing Analytics</h2>
                     <ol>
                         <li><a href="index.html">Home</a></li>
-                        <li>SG Public Housing Dashboard</li>
+                        <li>SG Public Housing Analytics</li>
                     </ol>
                 </div>
 
@@ -127,8 +127,8 @@
                             <div class="swiper-wrapper align-items-center">
 
                                 <section>
-                                    <object width="1200" height="600" type="text/html"
-                                        data="assets/charts/mth_boxplot.html"></object>
+                                    <img src="assets/img/portfolio/public_housing_homepage.jpg" class="img-fluid"
+                                        alt="">
                                 </section>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -139,15 +139,19 @@
                         <div class="portfolio-info">
                             <h3>Project information</h3>
                             <ul>
-                                <li><strong>Category</strong>: Dashboard</li>
+                                <li><strong>Category</strong>: Dashboard |
+                                    Research | Analytics </li>
                                 <li><strong>Project date</strong>: Ongoing</li>
+                                <li><strong>Project Link</strong>: <a target='_unblank'
+                                        href="https://sg-housing.onrender.com/">https://sg-housing.onrender.com</a>
+                                </li>
                                 <li><strong>Data From</strong>: <a target='_unblank'
                                         href="https://beta.data.gov.sg/collections/189/view">data.gov.sg</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="portfolio-description">
-                            <h2>SG Public Housing Dashboard</h2>
+                            <h2>SG Public Housing Analytics</h2>
                             <p style="text-align: justify;">
                                 Singapore's public housing policies are internationally acclaimed, with many attributing
                                 our economic miracle to our public housing policies. However, there is
@@ -162,132 +166,6 @@
             </div>
         </section><!-- End Portfolio Details Section -->
     </main><!-- End #main -->
-
-
-    <div>
-        <div style="display: flex;">
-            <div style="flex: 1;">
-                <div class="container mt-5">
-                    <input type="checkbox" id="toggleCheckbox1" class="d-none">
-                    <label for="toggleCheckbox1" class="btn btn-primary">Mths / Qtrs</label>
-                    <div class="sliding-panel">
-                        <div class="panel-content" id="panel1">
-                            <object width="1050" height="650" type="text/html"
-                                data="assets/charts/mth_boxplot.html"></object>
-                        </div>
-                        <div class="panel-content" id="panel2">
-                            <object width="1050" height="650" type="text/html"
-                                data="assets/charts/qtr_boxplot.html"></object>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div
-                style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
-                <p> Instead of focusing on a single metric like median or mean prices, <b>I wanted to see the
-                        distribution of public resale prices across months and quarters.</b> Boxplot charts do this
-                    well because they show median prices, 25th and 75th percentile, and any outliers within that group.
-                    Periods where the median public home prices are greater than 500K SGD are shown in red, and we can
-                    see that this reflects all recent periods. Our boxplots also show that the separation between the
-                    expensive and cheap public homes have increased in the past few years. Do we still have affordable
-                    public homes? Yes. But are some of our public homes getting more and more expensive? That seems to
-                    be yes as well.
-                </p>
-            </div>
-        </div>
-
-        <div style="display: flex;">
-            <div style="flex: 1;">
-                <div class="container mt-5">
-                    <input type="checkbox" id="toggleCheckbox2" class="d-none">
-                    <label for="toggleCheckbox2" class="btn btn-primary">Mths / Qtrs</label>
-                    <div class="sliding-panel">
-                        <div class="panel-content" id="panel1">
-                            <object width="1050" height="650" type="text/html"
-                                data="assets/charts/mth_barline_chart.html"></object>
-                        </div>
-                        <div class="panel-content" id="panel2">
-                            <object width="1050" height="650" type="text/html"
-                                data="assets/charts/qtr_barline_chart.html"></object>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div
-                style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
-                <p>I also overlapped a bar and line chart that tracks total number of million public dollar homes
-                    and the percentage of million dollar public homes over total public homes sold. <b>Not only we see a
-                        rising number of million dollar public homes sold Singapore, there is also a growing trend of
-                        these million dollar homes forming a larger percentage of overall public homes sold in
-                        Singapore.</b> As recent as 2020, million dollar public homes only make up less than 1% of all
-                    public homes sold, and now, this percentage can easily be above 2-3% in any given period.
-                    That said, this percentage is still relatively small, but the growing trend can be a bit worrying
-                    for some.
-                </p>
-            </div>
-        </div>
-
-        <div style="display: flex;">
-            <div style="flex: 1;">
-                <div class="container mt-5">
-                    <input type="checkbox" id="toggleCheckbox3" class="d-none">
-                    <label for="toggleCheckbox3" class="btn btn-primary">Mths / Qtrs</label>
-                    <div class="sliding-panel">
-                        <div class="panel-content" id="panel1">
-                            <object width="1050" height="650" type="text/html"
-                                data="assets/charts/mth_stack_bar_values.html"></object>
-                        </div>
-                        <div class="panel-content" id="panel2">
-                            <object width="1050" height="650" type="text/html"
-                                data="assets/charts/qtr_stack_bar_values.html"></object>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div
-                style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
-                <p>This stacked bar chart shows the number of public home sales, grouped by price categories determined
-                    by me. I did these price categories using my own intuitions on what makes sense. I wanted this view
-                    to go beyond looking at million dollar homes, and focus on the overall market structure of our
-                    public housing market. <b>We see growing number of public home sales that are in the range of SGD
-                        500-800k, SGD 800K-1M and SGD >1M</b>. There is also a shrinking number of public homes sold
-                    between SGD 300-500K, and barely any public homes sold that are less than 300K in recent months.</p>
-            </div>
-        </div>
-
-        <div style="display: flex;">
-            <div style="flex: 1;">
-                <div class="container mt-5">
-                    <input type="checkbox" id="toggleCheckbox4" class="d-none">
-                    <label for="toggleCheckbox4" class="btn btn-primary">Mths / Qtrs</label>
-                    <div class="sliding-panel">
-                        <div class="panel-content" id="panel1">
-                            <object width="1050" height="650" type="text/html"
-                                data="assets/charts/mth_stack_bar_percent.html"></object>
-                        </div>
-                        <div class="panel-content" id="panel2">
-                            <object width="1050" height="650" type="text/html"
-                                data="assets/charts/qtr_stack_bar_percent.html"></object>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div
-                style="flex: 1; display: flex; align-items: center; padding-left: 10px; padding-right: 30px; text-align: justify;">
-                <p>This chart is similar to the one above, but looks at percentages instead. This is to allow changes in
-                    proportions across different price categories even more obvious. <b>We can see that expensive public
-                        home sales are forming a larger proportion of sales in the resale market.</b> Similar to the
-                    trend caught above, the percentage of greater than 1 million dollar public homes is still quite
-                    small, but the growing trend does seem a bit worrying. <b>And similar to above, we see growing
-                        number of public home sales that are 500K SGD and above, and a declining proportion that are
-                        less than 500K SGD.</b>
-                </p>
-
-                </p>
-            </div>
-        </div>
-    </div>
-
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
