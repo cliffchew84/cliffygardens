@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Portfolio Details - OnePage Bootstrap Template</title>
+    <title>SG Home Analytics Research</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -39,6 +39,38 @@
 
         gtag('config', 'G-HP3T4SX7XF');
     </script>
+
+    <style>
+        .sliding-panel {
+            position: relative;
+            width: 1010px;
+            overflow: hidden;
+            height: 620px;
+            /* Adjust as needed */
+            border: 1px solid #ddd;
+        }
+
+        .panel-content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            transition: left 0.5s ease;
+        }
+
+        input[type="checkbox"]:checked~.sliding-panel .panel-content#panel1 {
+            left: -100%;
+        }
+
+        input[type="checkbox"]:checked~.sliding-panel .panel-content#panel2 {
+            left: 0;
+        }
+
+        .panel-content#panel1 {
+            left: 0;
+        }
+    </style>
 
     <!-- =======================================================
   * Template Name: OnePage
@@ -74,11 +106,11 @@
             <div class="container">
 
                 <div class="d-flex justify-content-between align-items-center">
-                    <h2>My SG Library App</h2>
+                    <h2>SG Home Analytics Research</h2>
                     <ol>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="index.html#portfolio">Portfolio</a></li>
-                        <li>My SG Library App</li>
+                        <li>SG Home Analytics Research</li>
                     </ol>
                 </div>
 
@@ -95,9 +127,9 @@
                         <div class="portfolio-details-slider swiper">
                             <div class="swiper-wrapper align-items-center">
 
-                                <div class="swiper-slide">
-                                    <img src="assets/img/portfolio/sglibrary.jpg" alt="">
-                                </div>
+                                <section>
+                                    <img src="assets/img/portfolio/blog.jpg" class="img-fluid" alt="">
+                                </section>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -107,41 +139,43 @@
                         <div class="portfolio-info">
                             <h3>Project information</h3>
                             <ul>
-                                <li><strong>Category</strong>: Web App</li>
+                                <li><strong>Category</strong>: Analytics |
+                                    Research </li>
                                 <li><strong>Project date</strong>: Ongoing</li>
-                                <li><strong>Project URL</strong>: <a
-                                        href="https://sg-nlb-available-books.onrender.com/">
-                                        https://sg-nlb-available-books.onrender.com/</a>
+                                <li><strong>Project Link</strong>: <a target='_unblank'
+                                        href="https://sg-housing.onrender.com/blog">SG Home Analytics Research</a>
+                                </li>
+                                <li><strong>Data From</strong>: <a target='_unblank'
+                                        href="https://beta.data.gov.sg/collections/189/view">data.gov.sg</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="portfolio-description">
-                            <h2>My SG Library App</h2>
+                            <h2>SG Home Analytics Research</h2>
                             <p style="text-align: justify;">
-                                I am a huge fan of our Singapore libraries.
-                                However, one issue I have with their website and app
-                                is that they don't show books availability based on
-                                the library that I am at. This web app hopes to
-                                change that, by providing book availability
-                                information at a library level!
+                                Beyond my <a target="_unblank"
+                                    href="https://sg-housing.onrender.com/sg-public-home-trends">general
+                                    housing trend dashboard</a> and
+                                <a target="_unblank" href="https://sg-housing.onrender.com/public_homes">public housing
+                                    transaction search dashboard</a>, I am doing some deeper analytics research based on
+                                our Singapore housing market. These are longer analyses where I do deeper dives into our
+                                Singapore housing market, based on data provided by our Singapore government. These
+                                analyses strive to provide more insights into the nature of our Singapore housing
+                                market. While some of the posts are initially published on my Medium blog, the benefit
+                                of publishing them here is that I can add interactively plots that my users can also
+                                play with themselves.
                             </p>
                             <p style="text-align: justify;">
-                                <b>
-                                    This project has been de-prioritised,
-                                    and is placed on a freemium server. It is
-                                    still alive, but the app will take some
-                                    time to load up. I am personally still using
-                                    this app myself.
-                                </b>
+                                Hopefully, these interactive charts can help my audience better understand the housing
+                                data that I am looking at and playing with myself. Ultimately, I hope that these
+                                analyses can allow us to have wider discussions about our Singapore housing market in
+                                general.
                             </p>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section><!-- End Portfolio Details Section -->
-
     </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
